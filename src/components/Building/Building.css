@@ -1,0 +1,9 @@
+.floor {
+    display: flex;
+    align-items: center;
+}
+
+.floor-length {
+  border-right: 25em solid black;
+  height: 2px;
+}
