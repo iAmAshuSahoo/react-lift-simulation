@@ -1,9 +1,9 @@
 import './App.css';
-import Lift from './components/Lift/Lift'
+import LiftSimulation from './components/Lift/Lift'
 function App() {
   return (
     <div className="App">
-      <Lift />
+      <LiftSimulation />
     </div>
   );
 }

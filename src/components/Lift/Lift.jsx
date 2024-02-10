@@ -3,7 +3,7 @@ import LiftConfig from '../LiftConfig/LiftConfig';
 import Building from '../Building/Building'
 import {LiftConfigContext} from '../../context/lift-config'
 
-function Lift() {
+function LiftSimulation() {
     const [simulateValue, setSimulateValue] = useState({lifts: 0, floors: 0})
   return (
     <LiftConfigContext.Provider value={{simulateValue, setSimulateValue}}>
@@ -14,4 +14,4 @@ function Lift() {
   )
 }
 
-export default Lift
+export default LiftSimulation
