@@ -1,0 +1,76 @@
+.floor {
+  display: flex;
+  border-bottom: 2px solid black;
+  height: 110px;
+  margin-bottom: 20px;
+  min-width: 800px;
+}
+
+.floor-controls {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.floor-no {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.up-down-btn {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+}
+
+.bttn {
+    margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background-color: purple;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.lift {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  background-color: yellow;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+
+.left-door {
+  border: 2px solid black;
+  width: 25px;
+  height: 85px;
+  background-color: orange;
+}
+
+.right-door {
+  border: 2px solid black;
+  width: 25px;
+  height: 85px;
+  background-color: orange;
+}
+
+@media screen and (max-width: 600px) {
+  .config-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .lift {
+    min-width: 50px;
+  }
+  .left-door {
+    height: 75px;
+  }
+  .right-door {
+    height: 75px;
+  }
+}

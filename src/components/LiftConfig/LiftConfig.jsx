@@ -1,8 +1,10 @@
-import {useContext} from 'react';
+import {useContext, useState} from 'react';
 import {LiftConfigContext} from '../../context/lift-config'
+import './LiftConfig.css';
 
 function LiftConfig() {
-    const {liftConfigValue, setLiftConfigValue} = useContext(LiftConfigContext);
+    const {setSimulateValue} = useContext(LiftConfigContext);
+    const [liftConfigValue, setLiftConfigValue] = useState({lifts: 0, floors: 0});
 
     const handleConfigChange = (key, value) => {
         if(!isNaN(parseInt(value))) {
@@ -13,18 +15,27 @@ function LiftConfig() {
     }
   return (
     <>
-    <div>Lift Configuration</div>
-    <div>
-        <label>Number of Floors</label>
-        <input type='text' 
-            value={liftConfigValue.floors}
-            onChange={(e) => handleConfigChange('floors', e.target.value)} />
-    </div>
-    <div>
-        <label>Number of Lifts</label>
-        <input type='text' 
-            value={liftConfigValue.lifts}
-            onChange={(e) => handleConfigChange('lifts', e.target.value)} />
+    <div className='lift-config-heading'>Lift Configuration</div>
+    <div className="config-container">
+        <div>
+            <label>Number of Floors</label>
+            <input type='text' 
+                className='inp-style'
+                value={liftConfigValue.floors}
+                onChange={(e) => handleConfigChange('floors', e.target.value)} />
+        </div>
+        <div>
+            <label>Number of Lifts</label>
+            <input type='text' 
+                className='inp-style'
+                value={liftConfigValue.lifts}
+                onChange={(e) => handleConfigChange('lifts', e.target.value)} />
+        </div>
+        <div>
+            <button 
+                className='btn-lift'
+                onClick={() => setSimulateValue({...liftConfigValue})}>Simulate</button>
+        </div>
     </div>
     </>
   )

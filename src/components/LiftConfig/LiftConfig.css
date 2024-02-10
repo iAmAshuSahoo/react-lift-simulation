@@ -1,0 +1,25 @@
+.config-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  margin-top: 25px;
+}
+
+.lift-config-heading {
+    font-size: 22px;
+}
+
+.inp-style {
+  padding: 5px 10px;
+  border: 2px solid;
+  border-radius: 6%;
+  margin-left: 10px;
+}
+
+.btn-lift {
+  padding: 7px 20px;
+  font-weight: 700;
+  color: white;
+  background-color: #5454fd;
+  border-radius: 15px;
+}
