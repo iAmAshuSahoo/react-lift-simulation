@@ -62,7 +62,7 @@ function Building() {
     const liftIndex = lifts.findIndex((lift) => lift.id === nearestLiftId);
     if (liftIndex > -1) {
       const source = lifts[liftIndex].currentFloor;
-      const distance = -1 * destination * 130;
+      const distance = -1 * destination * 131;
       const time = Math.abs(source - destination) * 2;
       
       setLifts((prevLift) => {
