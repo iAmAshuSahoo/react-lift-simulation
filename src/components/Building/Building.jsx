@@ -62,7 +62,7 @@ function Building() {
     const liftIndex = lifts.findIndex((lift) => lift.id === nearestLiftId);
     if (liftIndex > -1) {
       const source = lifts[liftIndex].currentFloor;
-      const distance = -1 * destination * 130;
+      const distance = -1 * destination * 131;
       const time = Math.abs(source - destination) * 2;
       
       setLifts((prevLift) => {
@@ -128,8 +128,8 @@ function Building() {
         <div className='floor' key={index}>
           <div className="floor-controls">
             <div className='up-down-btn'>
-                <button className="up-btn bttn" onClick={() => handleUpClick(floorArray.length - index -1)}>Up</button>
-                <button className="down-btn bttn" onClick={handleDownClick}>Down</button>
+                <button className="up-btn bttn" onClick={() => handleClick(floorArray.length - index -1)}>Up</button>
+                <button className="down-btn bttn" onClick={() => handleClick(floorArray.length - index -1)}>Down</button>
             </div>
             <div className='floor-no'>Floor-{floorArray.length - index}</div>
           </div>
@@ -139,7 +139,7 @@ function Building() {
     })
   }
 
-  const handleUpClick = (index) => {
+  const handleClick = (index) => {
     const liftAtFloor = lifts.findIndex(lift =>  {
         const status = lift.currentFloor === index && lift.isMoving === false;
         return status;
