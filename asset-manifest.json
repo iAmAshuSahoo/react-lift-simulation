@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/iAmAshuSahoo/react-lift-simulation/static/css/main.24bf7fad.css",
-    "main.js": "/iAmAshuSahoo/react-lift-simulation/static/js/main.e95eb98f.js",
-    "static/js/787.68485ba7.chunk.js": "/iAmAshuSahoo/react-lift-simulation/static/js/787.68485ba7.chunk.js",
-    "index.html": "/iAmAshuSahoo/react-lift-simulation/index.html",
-    "main.24bf7fad.css.map": "/iAmAshuSahoo/react-lift-simulation/static/css/main.24bf7fad.css.map",
-    "main.e95eb98f.js.map": "/iAmAshuSahoo/react-lift-simulation/static/js/main.e95eb98f.js.map",
-    "787.68485ba7.chunk.js.map": "/iAmAshuSahoo/react-lift-simulation/static/js/787.68485ba7.chunk.js.map"
+    "main.css": "/react-lift-simulation/static/css/main.24bf7fad.css",
+    "main.js": "/react-lift-simulation/static/js/main.c7b527b2.js",
+    "static/js/787.68485ba7.chunk.js": "/react-lift-simulation/static/js/787.68485ba7.chunk.js",
+    "index.html": "/react-lift-simulation/index.html",
+    "main.24bf7fad.css.map": "/react-lift-simulation/static/css/main.24bf7fad.css.map",
+    "main.c7b527b2.js.map": "/react-lift-simulation/static/js/main.c7b527b2.js.map",
+    "787.68485ba7.chunk.js.map": "/react-lift-simulation/static/js/787.68485ba7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24bf7fad.css",
-    "static/js/main.e95eb98f.js"
+    "static/js/main.c7b527b2.js"
   ]
 }
