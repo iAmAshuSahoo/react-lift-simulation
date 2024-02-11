@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-lift-simulation/static/css/main.24bf7fad.css",
-    "main.js": "/react-lift-simulation/static/js/main.afa63c3b.js",
+    "main.css": "/react-lift-simulation/static/css/main.1727facd.css",
+    "main.js": "/react-lift-simulation/static/js/main.390960ca.js",
     "static/js/787.68485ba7.chunk.js": "/react-lift-simulation/static/js/787.68485ba7.chunk.js",
     "index.html": "/react-lift-simulation/index.html",
-    "main.24bf7fad.css.map": "/react-lift-simulation/static/css/main.24bf7fad.css.map",
-    "main.afa63c3b.js.map": "/react-lift-simulation/static/js/main.afa63c3b.js.map",
+    "main.1727facd.css.map": "/react-lift-simulation/static/css/main.1727facd.css.map",
+    "main.390960ca.js.map": "/react-lift-simulation/static/js/main.390960ca.js.map",
     "787.68485ba7.chunk.js.map": "/react-lift-simulation/static/js/787.68485ba7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24bf7fad.css",
-    "static/js/main.afa63c3b.js"
+    "static/css/main.1727facd.css",
+    "static/js/main.390960ca.js"
   ]
 }
