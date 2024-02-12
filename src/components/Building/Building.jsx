@@ -128,8 +128,8 @@ function Building() {
         <div className='floor' key={index}>
           <div className="floor-controls">
             <div className='up-down-btn'>
-                <button className="up-btn bttn" onClick={() => handleClick(floorArray.length - index -1)}>Up</button>
-                <button className="down-btn bttn" onClick={() => handleClick(floorArray.length - index -1)}>Down</button>
+                {!(index === 0) && <button className="up-btn bttn" onClick={() => handleClick(floorArray.length - index -1)}>Up</button>}
+                {!(index === floorArray.length - 1) && <button className="down-btn bttn" onClick={() => handleClick(floorArray.length - index -1)}>Down</button>}
             </div>
             <div className='floor-no'>Floor-{floorArray.length - index}</div>
           </div>
@@ -176,10 +176,6 @@ function Building() {
       return;
     }
     setPending([...pending, index]);
-  }
-
-  const handleDownClick = () => {
-    
   }
 
   return (
