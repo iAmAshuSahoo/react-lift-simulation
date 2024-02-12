@@ -8,7 +8,7 @@ function LiftSimulation() {
   return (
     <LiftConfigContext.Provider value={{simulateValue, setSimulateValue}}>
         <h1>Lift Simulation</h1>
-        <LiftConfig />
+        {simulateValue.floors === 0 && simulateValue.floors === 0 && <LiftConfig />}
         <Building />
     </LiftConfigContext.Provider>
   )
