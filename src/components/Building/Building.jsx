@@ -30,7 +30,6 @@ function Building() {
     const interval = setInterval(() => {
       if (pending.length > 0) {
         const nearestLiftId = findNearestLift(pending[0]);
-        console.log("pending", pending, 'nearestLift', nearestLiftId)
         if (lifts[nearestLiftId].isMoving === false) {
           moveLift(nearestLiftId, pending[0]);
           setPending(pending.slice(1))
@@ -44,7 +43,6 @@ function Building() {
   const findNearestLift = (destinationFloor) => {
     let nearestLiftDistance = simulateValue.floors-1;
     let nearestLiftId = lifts[0].id;
-    console.log("nearestLiftDistance", nearestLiftDistance, lifts, "lifts", destinationFloor, "destinationFloor")
     for (let liftIndex = 0; liftIndex < lifts.length; liftIndex++) {
       const lift = lifts[liftIndex];
       if (
