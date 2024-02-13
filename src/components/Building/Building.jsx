@@ -36,7 +36,7 @@ function Building() {
           setPending(pending.slice(1))
         }
       }
-    }, 1000);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [pending])
