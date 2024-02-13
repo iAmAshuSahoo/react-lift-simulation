@@ -175,7 +175,9 @@ function Building() {
       console.log("lift heading towards it wait.");
       return;
     }
-    setPending([...pending, index]);
+    if (!pending.includes(index)) {
+      setPending([...pending, index]);
+    }
   }
 
   return (
